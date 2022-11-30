@@ -1,9 +1,10 @@
 // Ejercicio 1.1
 
-const character= "";
-const name = "Jack Sparrow";
-const age = 10;
+const character = {name: "Jack Sparrow", age:10};
 
+character.age = 25;
+
+console.log(character);
 //-----------------
 
 // Ejercicio 1.2
@@ -15,4 +16,21 @@ console.log ("Soy " + firstName + " " + lastName + ", tengo " + ageJon + " años
 
 // Ejercicio 1.3
 
-const Bu
+const toy1 = {name: "Buss myYear", price: 19};
+const toy2 = {name: "Rallo mcKing", price: 29};
+
+console.log(toy1.price + toy2.price);
+
+// Ejercicio 1.4
+
+let globalBasePrice = 10000;
+
+const car1 = {name: "BMW m&m", basePrice: 50000, finalPrice: 60000};
+const car2 = {name: "Chevrolet Corbina", basePrice: 70000, finalPrice:80000};
+
+globalBasePrice = 25000;
+
+console.log(car1.finalPrice = car1.basePrice + globalBasePrice);
+
+
+console.log(car2.finalPrice = car2.basePrice + globalBasePrice);
